@@ -152,6 +152,12 @@ class _UserLoginState extends State<UserLogin> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
+                  Image.asset(
+                    'assets/logo.png',
+                    fit: BoxFit.cover,
+                    cacheHeight: 220,
+                  ),
+
                   /// Text fields
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 20),

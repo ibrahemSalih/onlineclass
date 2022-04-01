@@ -13,7 +13,7 @@ const kForget =
 const kNoAccount =
     TextStyle(color: Colors.white54, fontSize: 14, fontWeight: FontWeight.w400);
 var kDivHeader = const TextStyle(
-  color: Colors.amber,
+  color: Color.fromARGB(255, 245, 242, 48),
   fontSize: 20,
   fontWeight: FontWeight.w500,
 );
@@ -23,8 +23,8 @@ const kUser =
     TextStyle(color: Colors.yellow, fontSize: 30, fontWeight: FontWeight.bold);
 const kUserName =
     TextStyle(color: Colors.white60, fontSize: 14, fontWeight: FontWeight.w400);
-var kDrawerBtn =
-    TextStyle(color: darkBlue, fontSize: 18, fontWeight: FontWeight.w600);
+var kDrawerBtn = const TextStyle(
+    color: Colors.white, fontSize: 18, fontWeight: FontWeight.w600);
 const kProfileBtn =
     TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.w400);
 const kAdminSub =

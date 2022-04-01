@@ -17,7 +17,10 @@ class AdminStageScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: colorBack1,
       appBar: AppBar(
-        title: const Text('Stages'),
+        title: const Text(
+          'Stages',
+          style: TextStyle(color: Colors.yellow),
+        ),
         backgroundColor: colorBack1,
       ),
       body: SafeArea(
@@ -61,7 +64,7 @@ class AdminStageScreen extends StatelessWidget {
                       Expanded(
                         child: Container(
                           height: 1,
-                          color: Colors.amber,
+                          color: cyan,
                         ),
                       ),
                       Padding(
@@ -75,7 +78,7 @@ class AdminStageScreen extends StatelessWidget {
                       Expanded(
                         child: Container(
                           height: 1,
-                          color: Colors.amber,
+                          color: cyan,
                         ),
                       ),
                     ],
@@ -112,7 +115,7 @@ class AdminStageScreen extends StatelessWidget {
                       Expanded(
                         child: Container(
                           height: 1,
-                          color: Colors.amber,
+                          color: cyan,
                         ),
                       ),
                       Padding(
@@ -125,7 +128,7 @@ class AdminStageScreen extends StatelessWidget {
                       Expanded(
                         child: Container(
                           height: 1,
-                          color: Colors.amber,
+                          color: cyan,
                         ),
                       ),
                     ],

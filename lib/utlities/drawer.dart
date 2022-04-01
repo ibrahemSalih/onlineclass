@@ -32,6 +32,7 @@ class _DrawersState extends State<Drawers> {
   Widget build(BuildContext context) {
     debugPrint(nameSplited.first);
     return Drawer(
+      backgroundColor: colorBack1,
       child: Column(
         children: [
           Expanded(
@@ -70,6 +71,9 @@ class _DrawersState extends State<Drawers> {
                 ],
               ),
             ),
+          ),
+          Divider(
+            color: darkBlue,
           ),
           Expanded(
             flex: 2,
@@ -126,7 +130,7 @@ class DrawerButtons extends StatelessWidget {
         leading: Icon(
           icon,
           size: 35,
-          color: darkBlue,
+          color: cyan,
         ),
         title: Text(
           title,

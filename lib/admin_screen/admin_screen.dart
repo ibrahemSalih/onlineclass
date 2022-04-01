@@ -21,7 +21,10 @@ class _AdminScreenState extends State<AdminScreen> {
       drawer: const Drawers(),
       backgroundColor: colorBack1,
       appBar: AppBar(
-        title: const Text('Admin Dashboard'),
+        title: const Text(
+          'Admin Dashboard',
+          style: TextStyle(color: Color.fromARGB(255, 235, 220, 84)),
+        ),
         backgroundColor: colorBack1,
       ),
       body: SafeArea(

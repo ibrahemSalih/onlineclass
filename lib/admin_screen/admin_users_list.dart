@@ -17,8 +17,12 @@ class _AdminUsersListState extends State<AdminUsersList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: darkBlue,
       appBar: AppBar(
-        title: const Text('Users'),
+        title: const Text(
+          'Users',
+          style: TextStyle(color: Colors.yellow),
+        ),
         backgroundColor: darkBlue,
         actions: [
           IconButton(
@@ -31,7 +35,10 @@ class _AdminUsersListState extends State<AdminUsersList> {
                   ),
                 );
               },
-              icon: const Icon(Icons.person_add))
+              icon: const Icon(
+                Icons.person_add,
+                color: Colors.yellow,
+              ))
         ],
       ),
       body: StreamBuilder<QuerySnapshot>(
@@ -113,7 +120,7 @@ class _UserCardState extends State<UserCard> {
               padding:
                   const EdgeInsets.symmetric(horizontal: 12.0, vertical: 12.0),
               decoration: BoxDecoration(
-                  color: darkBlue, borderRadius: BorderRadius.circular(15.0)),
+                  color: testColor, borderRadius: BorderRadius.circular(15.0)),
               child: ListTile(
                   title: Text(widget.name[index],
                       style: const TextStyle(color: Colors.white)),
@@ -145,7 +152,7 @@ class _UserCardState extends State<UserCard> {
                             },
                             icon: const Icon(
                               Icons.edit,
-                              color: Colors.amber,
+                              color: Colors.yellow,
                             ),
                           ),
                         ),
@@ -157,7 +164,7 @@ class _UserCardState extends State<UserCard> {
                             },
                             icon: Icon(
                               Icons.delete,
-                              color: Colors.redAccent.withOpacity(0.7),
+                              color: Color.fromARGB(255, 250, 25, 9),
                             ),
                           ),
                         ),
