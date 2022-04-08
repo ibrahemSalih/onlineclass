@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -36,7 +38,10 @@ class _UserVideoScreenState extends State<UserVideoScreen> {
       appBar: MediaQuery.of(context).orientation == Orientation.portrait
           ? AppBar(
               backgroundColor: colorBack1,
-              title: Text(widget.docs),
+              title: Text(
+                widget.docs,
+              ),
+              foregroundColor: Colors.yellow,
             )
           : null,
       body: SizedBox(
