@@ -40,7 +40,10 @@ class _UserMainScreenState extends State<UserMainScreen> {
       drawer: const Drawers(),
       backgroundColor: colorBack1,
       appBar: AppBar(
-        title: const Text('Home'),
+        title: const Text(
+          'Home',
+          style: TextStyle(color: Colors.yellow),
+        ),
         backgroundColor: colorBack1,
       ),
       body: SizedBox(

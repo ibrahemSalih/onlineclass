@@ -162,7 +162,7 @@ class _UserCardState extends State<UserCard> {
                               deleteUser(index);
                               userIds.removeAt(index);
                             },
-                            icon: Icon(
+                            icon: const Icon(
                               Icons.delete,
                               color: Color.fromARGB(255, 250, 25, 9),
                             ),
