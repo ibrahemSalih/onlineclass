@@ -155,7 +155,7 @@ class _UserLoginState extends State<UserLogin> {
                   Image.asset(
                     'assets/logo.png',
                     fit: BoxFit.cover,
-                    cacheHeight: 220,
+                    cacheHeight: 200,
                   ),
 
                   /// Text fields
