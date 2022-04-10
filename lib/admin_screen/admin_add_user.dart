@@ -79,24 +79,6 @@ class _AdminAddUserState extends State<AdminAddUser> {
         });
   }
 
-  // checkAuthentication() async {
-  //   _auth.authStateChanges().listen((user) {
-  //     if(dropDownValue!='Select Stage'){
-  //       if(user!=null){
-  //         Navigator.pushNamed(context, '/MainScreen');
-  //       }
-  //     }
-  //   });
-  // }
-
-  // getInfo() async{
-  //   debugPrint('Shared Pref is called');
-  //   int? isSelected=0;
-  //   SharedPreferences preferences = await SharedPreferences.getInstance();
-  //   preferences.setInt('stageKeys', isSelected);
-  //   debugPrint(preferences.getInt('stageKeys').toString());
-  // }
-
   signup() async {
     setState(() {
       isSpinning = true;
