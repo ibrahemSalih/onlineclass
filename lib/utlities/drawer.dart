@@ -80,13 +80,13 @@ class _DrawersState extends State<Drawers> {
             child: SizedBox(
               child: Column(
                 children: [
-                  DrawerButtons(
-                    title: 'Home',
-                    icon: Icons.home,
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
+                  // DrawerButtons(
+                  //   title: 'Home',
+                  //   icon: Icons.home,
+                  //   onTap: () {
+                  //     Navigator.pop(context);
+                  //   },
+                  // ),
                   DrawerButtons(
                     title: 'Log out',
                     icon: Icons.exit_to_app_sharp,
