@@ -69,6 +69,7 @@ class _AdminVideoScreenState extends State<AdminVideoScreen> {
                 .collection(widget.collection)
                 .doc(widget.docs)
                 .collection('lessons')
+                .orderBy('Name', descending: false)
                 .snapshots(),
             builder: (ctx, snapshot) {
               final videoData = snapshot.data?.docs;

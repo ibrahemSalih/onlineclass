@@ -42,7 +42,10 @@ class _AdminUsersListState extends State<AdminUsersList> {
         ],
       ),
       body: StreamBuilder<QuerySnapshot>(
-        stream: _firebase.collection('users').snapshots(),
+        stream: _firebase
+            .collection('users')
+            .orderBy('name', descending: false)
+            .snapshots(),
         builder: (ctx, snapshot) {
           final userList = snapshot.data?.docs;
           List<String> name = [];
