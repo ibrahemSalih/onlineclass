@@ -51,6 +51,7 @@ class _UserVideoScreenState extends State<UserVideoScreen> {
                 .collection(widget.collection)
                 .doc(widget.docs)
                 .collection('lessons')
+                .orderBy('Name', descending: false)
                 .snapshots(),
             builder: (ctx, snapshot) {
               final videoData = snapshot.data?.docs;
